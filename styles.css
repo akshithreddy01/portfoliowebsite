@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.total{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient(to left,#D3CAE2,#E6C17A);
+    z-index: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 5px grey;
+}
+.nav .logo{
+    min-width: 8rem;
+    border-radius: 10px;
+    color: #404041;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    transition: all .1s ease-in ;
+}
+.logo:hover{
+    font-size: x-large;
+}
+.butts{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 25rem;
+    height: 6vh;
+}
+.b1,.b2,.b3,.b4{
+    min-width: 15px;
+    padding: 0 2px 0 2px;
+    border-radius: 10px;
+    height: 6vh;
+    box-shadow: 0 0 2px grey;
+    color: #404041;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s ease-in;
+
+}
+.b2:hover,.b1:hover,.b3:hover,.b4:hover{
+    color: red;
+    text-decoration:solid;
+    box-shadow: 0 0 6px black;
+}
+.page1{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    font-weight: 800;
+    width: 100%;
+    background-image: linear-gradient(to left,#D3CAE2,#E6C17A);
+}
+.minimg{
+    height:25rem;
+    width: 25rem; 
+    background-image: url(mainphoto.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    }
+.info{
+    max-width: 30rem;
+    min-width: 20rem;
+    color: #800000;
+    font-size: 2rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sevices{
+      display: flex;
+      flex-direction: row;
+      color: #800000;
+      font-size: 1.2rem;
+}
+.s1,.s2,.s3{
+    align-items: center;
+    background-color: bisque;
+    backdrop-filter: blur(15px);
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+
+}
+.heading{
+     height: 3rem;
+     width: 5rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: azure;
+}
+.cardsholder{
+     display: flex;
+     
+}
+@media only screen and (max-width: 768px) {
+     .butts{
+        display: none;
+     }
+     .page1{
+        flex-direction: column;
+     }
+     .minimg{
+        height: 15rem;
+        width: 15rem;
+     }
+     .info{
+        font-size: 1.2rem;
+     }
+     .sevices{
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+     }
+     .sep{
+        display: none;
+     }
+     .intro{
+        margin-top: 3rem;
+     }
+}
+
